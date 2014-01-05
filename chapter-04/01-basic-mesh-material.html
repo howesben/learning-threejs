@@ -129,7 +129,7 @@
                     $("#WebGL-output").empty();
                     $("#WebGL-output").append(renderer.domElement);
                 }
-            }
+            };
         }
 
         var gui = new dat.GUI();
@@ -137,19 +137,19 @@
 
         var spGui = gui.addFolder("Mesh");
         spGui.add(controls, 'opacity', 0, 1).onChange(function (e) {
-            meshMaterial.opacity = e
+            meshMaterial.opacity = e;
         });
         spGui.add(controls, 'transparent').onChange(function (e) {
-            meshMaterial.transparent = e
+            meshMaterial.transparent = e;
         });
         spGui.add(controls, 'wireframe').onChange(function (e) {
-            meshMaterial.wireframe = e
+            meshMaterial.wireframe = e;
         });
         spGui.add(controls, 'wireframeLinewidth', 0, 20).onChange(function (e) {
-            meshMaterial.wireframeLinewidth = e
+            meshMaterial.wireframeLinewidth = e;
         });
         spGui.add(controls, 'visible').onChange(function (e) {
-            meshMaterial.visible = e
+            meshMaterial.visible = e;
         });
         spGui.add(controls, 'side', ["front", "back", "double" ]).onChange(function (e) {
             console.log(e);
